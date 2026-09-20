@@ -202,7 +202,7 @@ img, svg { max-width: 100%; }
   .nav a { padding: 8px 12px; border: 0; font-size: 16px; }
   .nav a:hover { text-decoration: underline; }
   .main-visual { margin-top: 71px; min-height: 380px; }
-  .mv-badge { position: absolute; right: -150px; top: -44px; margin: 0; transform: rotate(-3deg); }
+  .mv-badge { position: absolute; right: -190px; top: -56px; margin: 0; transform: rotate(-3deg); }
   .intro { font-size: 17px; padding: 30px 16px; }
   .cards { grid-template-columns: repeat(3, 1fr); gap: 24px; }
   .panels { grid-template-columns: 1fr 1fr; gap: 14px; }
