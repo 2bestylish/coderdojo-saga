@@ -3,217 +3,70 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CoderDojo さが - 小・中学生のためのプログラミングクラブ</title>
-  <meta name="description" content="佐賀市で毎月開催する、子どもたちのためのプログラミングクラブ CoderDojo さが">
-  <meta property="og:title" content="CoderDojo さが">
-  <meta property="og:description" content="子どものためのプログラミングクラブ">
-  <meta property="og:type" content="website">
+  <meta name="robots" content="noindex, nofollow">
+  <title>CoderDojo さが（関係者向け）</title>
   <link rel="icon" href="assets/logo-mark-t.png">
-  <meta property="og:image" content="https://2bestylish.github.io/coderdojo-saga/assets/photo-group.webp">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=8">
+  <style>
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #e0f2f6;
+      font-family: "M PLUS Rounded 1c", -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif; }
+    .gate { background: #fff; border-radius: 20px; padding: 32px 24px; width: min(360px, 92vw); text-align: center; box-shadow: 0 4px 16px rgba(0,0,0,.12); }
+    .gate img { width: 88px; height: auto; }
+    .gate h1 { font-size: 20px; margin: 8px 0 4px; }
+    .gate p { font-size: 13px; margin: 0 0 16px; color: #555; }
+    .gate input { width: 100%; padding: 10px 12px; font-size: 16px; border: 2px solid #86d1a0; border-radius: 8px; box-sizing: border-box; }
+    .gate button { margin-top: 12px; width: 100%; padding: 10px; font-size: 16px; border: 0; border-radius: 8px; background: #1493d2; color: #fff; cursor: pointer; }
+    .gate button:disabled { opacity: .6; cursor: wait; }
+    .err { color: #c0392b; font-size: 13px; min-height: 1.4em; margin: 8px 0 0; }
+  </style>
 </head>
 <body>
-
-<header class="site-header">
-  <a class="logo" href="#top">
-    <img src="assets/logo-mark-t.png" alt="" width="38" height="41">
-    <span>CoderDojo <b>さが</b></span>
-  </a>
-  <button class="menu-btn" aria-label="メニュー" aria-expanded="false" aria-controls="nav">
-    <span></span><span></span><span></span>
-  </button>
-  <nav id="nav" class="nav">
-    <a href="#about">CoderDojoについて</a>
-    <a href="#schedule">開催予定</a>
-    <a href="#report">開催レポート</a>
-    <a href="#news">お知らせ</a>
-    <a href="#sponsor">協力・支援</a>
-    <a href="mailto:saga.jp@coderdojo.com">お問い合わせ</a>
-  </nav>
-</header>
-
-<main id="top">
-
-  <section class="main-visual">
-    <div class="mv-inner">
-      <p class="mv-badge">佐賀県佐賀市</p>
-      <p class="mv-sub">子どものためのプログラミングクラブ</p>
-      <h1 class="mv-title">
-        <img src="assets/logo-full.png" alt="CoderDojo さが" width="1840" height="545">
-      </h1>
-    </div>
-  </section>
-
-  <section class="intro">
-    <p>
-      CoderDojoは、アイルランドの一人の高校生が始めた、<br>
-      地域の子ども達にボランティアでプログラミングを指南する活動です。<br>
-      CoderDojoさがは佐賀市内で月1回、4歳児～高校生の子どもたちを対象に活動しています。
-    </p>
-  </section>
-
-  <section class="about-activities" id="about">
-    <ul class="cards">
-      <li>
-        <a class="card card-blue" href="https://www.facebook.com/CoderDojoSAGA/" target="_blank" rel="noopener">
-          <h2>活動を知りたい</h2>
-          <p>CoderDojo ってどんなとこ？<br>どんなことができるの？</p>
-        </a>
-      </li>
-      <li>
-        <a class="card card-orange" href="https://coderdojo-saga.peatix.com/" target="_blank" rel="noopener">
-          <h2>活動に参加したい</h2>
-          <p>ニンジャとして参加してみよう！</p>
-        </a>
-      </li>
-      <li>
-        <a class="card card-purple" href="#sponsor">
-          <h2>活動に協力したい</h2>
-          <p>メンターや寄付・協賛などで<br>活動への協力や応援をお願いいたします</p>
-        </a>
-      </li>
-    </ul>
-  </section>
-
-  <section class="schedule" id="schedule">
-    <div class="container panels">
-      <div class="panel">
-        <h2>今後の開催予定</h2>
-        <div class="panel-body">
-          <p><span class="pin">&#9679;</span>2026年09月20日(日) 10:00～12:00</p>
-          <p>第66回 CoderDojo さが</p>
-          <p>@佐賀市市民活動プラザ 4F 401・402会議室（佐賀県佐賀市）</p>
-          <p>共催：佐賀県産業スマート化センター</p>
-          <p class="closed">今回の参加申込は終了しました</p>
-          <div class="btn-wrap"><a class="btn" href="https://coderdojosaga66.peatix.com/" target="_blank" rel="noopener">詳細・参加申込</a></div>
-        </div>
-      </div>
-      <div class="panel">
-        <h2>活動のご案内</h2>
-        <div class="panel-body">
-          <ul>
-            <li>開催：佐賀市内で月1回</li>
-            <li>対象：4歳児～高校生</li>
-            <li>持ち物：飲みもの、パソコンやタブレット、学習中の教材など</li>
-            <li>機材の貸し出し：PC・タブレット・Micro:bit・Toioなど（数に限りがあります）</li>
-          </ul>
-          <div class="btn-wrap"><a class="btn" href="https://coderdojo-saga.peatix.com/" target="_blank" rel="noopener">開催案内の一覧</a></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section report" id="report">
-    <div class="container">
-      <h2 class="section-title">開催レポート</h2>
-      <ul class="post-grid">
-        <li>
-          <a href="https://coderdojosaga65.peatix.com/" target="_blank" rel="noopener">
-            <div class="post-thumb"><img src="assets/logo-mark-t.png" alt=""></div>
-            <h3>第65回 CoderDojo さが (2026年8月30日）</h3>
-            <dl class="post-meta">
-              <dt>開催日時</dt><dd>2026年08月30日(日) 10:00～12:00</dd>
-              <dt>会場</dt><dd>SAGA CHIKA（佐賀県庁の地下）</dd>
-            </dl>
-          </a>
-        </li>
-        <li>
-          <a href="https://coderdojosaga64.peatix.com/" target="_blank" rel="noopener">
-            <div class="post-thumb"><img src="assets/logo-mark-t.png" alt=""></div>
-            <h3>第64回 CoderDojo さが (2026年7月26日）</h3>
-            <dl class="post-meta">
-              <dt>開催日時</dt><dd>2026年07月26日(日) 10:00～12:00</dd>
-              <dt>会場</dt><dd>佐賀市青少年センター・大会議室（バルーンミュージアム3F）</dd>
-            </dl>
-          </a>
-        </li>
-        <li>
-          <a href="https://coderdojosaga63-2.peatix.com/" target="_blank" rel="noopener">
-            <div class="post-thumb"><img src="assets/logo-mark-t.png" alt=""></div>
-            <h3>第63回 CoderDojo さが (2026年6月21日）</h3>
-            <dl class="post-meta">
-              <dt>開催日時</dt><dd>2026年06月21日(日) 10:00～12:00</dd>
-              <dt>会場</dt><dd>佐賀市市民活動プラザ 401・402会議室（佐賀商工ビル4F）</dd>
-            </dl>
-          </a>
-        </li>
-        <li>
-          <a href="https://coderdojosaga62.peatix.com/" target="_blank" rel="noopener">
-            <div class="post-thumb"><img src="assets/logo-mark-t.png" alt=""></div>
-            <h3>第62回 CoderDojo さが (2026年5月31日）</h3>
-            <dl class="post-meta">
-              <dt>開催日時</dt><dd>2026年05月31日(日) 10:00～12:00</dd>
-              <dt>会場</dt><dd>佐賀市青少年センター・大会議室（バルーンミュージアム3F）</dd>
-            </dl>
-          </a>
-        </li>
-      </ul>
-      <p class="more"><a href="https://coderdojo-saga.peatix.com/events/past" target="_blank" rel="noopener">過去の開催案内を見る（Peatix）</a> ／ <a href="https://www.facebook.com/CoderDojoSAGA/" target="_blank" rel="noopener">活動の様子（Facebook）</a></p>
-    </div>
-  </section>
-
-  <section class="section news" id="news">
-    <div class="container">
-      <h2 class="section-title">お知らせ</h2>
-      <ul class="post-grid">
-        <li>
-          <a href="https://coderdojosaga66.peatix.com/" target="_blank" rel="noopener">
-            <div class="post-thumb"><img src="assets/logo-mark-t.png" alt=""></div>
-            <h3>第66回 CoderDojo さが（2026年9月20日開催）のご案内</h3>
-            <dl class="post-meta">
-              <dt>開催日時</dt><dd>2026年09月20日(日) 10:00～12:00</dd>
-              <dt>会場</dt><dd>佐賀市市民活動プラザ（佐賀県佐賀市）</dd>
-            </dl>
-            <div class="post-foot">佐賀県産業スマート化センター 共催</div>
-          </a>
-        </li>
-      </ul>
-      <p class="more"><a href="https://coderdojo-saga.peatix.com/" target="_blank" rel="noopener">開催案内の一覧を見る（Peatix）</a></p>
-    </div>
-  </section>
-
-  <section class="sponsor" id="sponsor">
-    <div class="container">
-      <p>CoderDojo さが は非営利のボランティア団体です。<br>
-        助成金や企業・個人の皆さまからの寄付金で運営されています。</p>
-      <p><img class="chikarat" src="assets/chikarat.png" alt="チカラット" width="110"></p>
-      <p>第66回は、佐賀市市民活動応援制度「チカラット」補助対象事業です。</p>
-      <p>メンター・寄付・協賛のご相談は <a href="mailto:saga.jp@coderdojo.com">saga.jp@coderdojo.com</a> まで。</p>
-    </div>
-  </section>
-
-</main>
-
-<footer class="site-footer">
-  <p>佐賀市内で毎月1回開催する子どもたちのためのプログラミングクラブ</p>
-  <ul class="footer-links">
-    <li><a href="#about">CoderDojoについて</a></li>
-    <li><a href="#schedule">開催予定</a></li>
-    <li><a href="#report">開催レポート</a></li>
-    <li><a href="#sponsor">協力・支援</a></li>
-    <li><a href="https://www.facebook.com/CoderDojoSAGA/" target="_blank" rel="noopener">Facebook</a></li>
-    <li><a href="https://coderdojo-saga.peatix.com/" target="_blank" rel="noopener">Peatix</a></li>
-    <li><a href="mailto:saga.jp@coderdojo.com">お問い合わせ</a></li>
-  </ul>
-  <p class="copy">&copy; CoderDojo Saga.</p>
-</footer>
-
+<form class="gate" id="gate">
+  <img src="assets/logo-mark-t.png" alt="">
+  <h1>CoderDojo さが</h1>
+  <p>このページは関係者向けです。パスワードを入力してください。</p>
+  <input type="password" id="pw" autocomplete="current-password" aria-label="パスワード" autofocus>
+  <button type="submit" id="go">開く</button>
+  <p class="err" id="err" role="alert"></p>
+</form>
 <script>
-  const btn = document.querySelector('.menu-btn');
-  const nav = document.getElementById('nav');
-  btn.addEventListener('click', () => {
-    const open = nav.classList.toggle('open');
-    btn.setAttribute('aria-expanded', open);
+(() => {
+  const ENC = { salt: "arq4/uT8u0la/cQ9o1XxeA==", iv: "Dl3meUSEvOPlfP0w", ct: "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", iter: 600000 };
+  const dec = s => Uint8Array.from(atob(s), ch => ch.charCodeAt(0));
+  async function unlock(pw) {
+    const base = await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    const key = await crypto.subtle.deriveKey(
+      { name: 'PBKDF2', salt: dec(ENC.salt), iterations: ENC.iter, hash: 'SHA-256' },
+      base, { name: 'AES-GCM', length: 256 }, false, ['decrypt']);
+    const plain = await crypto.subtle.decrypt({ name: 'AES-GCM', iv: dec(ENC.iv) }, key, dec(ENC.ct));
+    return JSON.parse(new TextDecoder().decode(plain));
+  }
+  function show(d) {
+    document.head.insertAdjacentHTML('beforeend', d.headLinks.join('
+'));
+    document.title = 'CoderDojo さが - 小・中学生のためのプログラミングクラブ';
+    document.body.removeAttribute('style');
+    document.body.innerHTML = d.body;
+    new Function(d.js)();
+    if (location.hash) { const t = document.querySelector(location.hash); if (t) t.scrollIntoView(); }
+  }
+  const form = document.getElementById('gate'), err = document.getElementById('err');
+  async function attempt(pw, remember) {
+    try {
+      const d = await unlock(pw);
+      if (remember) { try { sessionStorage.setItem('cdsaga', pw); } catch (e) {} }
+      show(d);
+      return true;
+    } catch (e) { return false; }
+  }
+  form.addEventListener('submit', async e => {
+    e.preventDefault();
+    const btn = document.getElementById('go'); btn.disabled = true; err.textContent = '';
+    const ok = await attempt(document.getElementById('pw').value, true);
+    if (!ok) { err.textContent = 'パスワードが違います。'; btn.disabled = false; }
   });
-  nav.addEventListener('click', e => {
-    if (e.target.tagName === 'A') {
-      nav.classList.remove('open');
-      btn.setAttribute('aria-expanded', false);
-    }
-  });
+  let saved = null; try { saved = sessionStorage.getItem('cdsaga'); } catch (e) {}
+  if (saved) attempt(saved, false);
+})();
 </script>
 </body>
 </html>
