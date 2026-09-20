@@ -4,28 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CoderDojo さが - 小・中学生のためのプログラミングクラブ</title>
-  <meta name="description" content="佐賀の子どもたちのためのプログラミングクラブ CoderDojo さが">
+  <meta name="description" content="佐賀市で毎月開催する、子どもたちのためのプログラミングクラブ CoderDojo さが">
   <meta property="og:title" content="CoderDojo さが">
-  <meta property="og:description" content="小・中学生のためのプログラミングクラブ">
+  <meta property="og:description" content="子どものためのプログラミングクラブ">
   <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="mark" viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="47" fill="#fff" stroke="#0f4fa8" stroke-width="5"/>
+    <path d="M50 3 A47 47 0 0 1 50 97 A23.5 23.5 0 0 1 50 50 A23.5 23.5 0 0 0 50 3Z" fill="#1b5fc9"/>
+    <circle cx="50" cy="26.5" r="7" fill="#fff"/>
+    <circle cx="50" cy="73.5" r="7" fill="#1b5fc9"/>
+    <text x="63" y="38" font-family="monospace" font-size="20" font-weight="700" fill="#fff">1</text>
+    <text x="24" y="76" font-family="monospace" font-size="20" font-weight="700" fill="#1b5fc9">0</text>
+  </symbol>
+</svg>
+
 <header class="site-header">
   <a class="logo" href="#top">
-    <span class="logo-mark" aria-hidden="true">{ }</span>
-    <span class="logo-text">CoderDojo <b>さが</b></span>
+    <svg aria-hidden="true"><use href="#mark"/></svg>
+    <span>CoderDojo <b>さが</b></span>
   </a>
   <button class="menu-btn" aria-label="メニュー" aria-expanded="false" aria-controls="nav">
     <span></span><span></span><span></span>
   </button>
   <nav id="nav" class="nav">
-    <a href="#about">CoderDojoとは</a>
+    <a href="#about">CoderDojoについて</a>
     <a href="#schedule">開催予定</a>
     <a href="#report">開催レポート</a>
     <a href="#news">お知らせ</a>
-    <a href="#sponsor">協力・協賛</a>
+    <a href="#sponsor">協力・支援</a>
+    <a href="mailto:saga.jp@coderdojo.com">お問い合わせ</a>
   </nav>
 </header>
 
@@ -33,9 +48,12 @@
 
   <section class="main-visual">
     <div class="mv-inner">
-      <p class="mv-badge">佐賀県佐賀市</p>
       <p class="mv-sub">子どものためのプログラミングクラブ</p>
-      <h1 class="mv-title">CoderDojo <span>さが</span></h1>
+      <h1 class="mv-title">
+        <svg role="img" aria-label="CoderDojo さがのロゴ"><use href="#mark"/></svg>
+        <span class="mv-name">CoderDojo <span>さが</span></span>
+      </h1>
+      <p class="mv-badge">佐賀県佐賀市</p>
     </div>
   </section>
 
@@ -48,72 +66,107 @@
   </section>
 
   <section class="about-activities" id="about">
-    <div class="cards">
-      <a class="card card-blue" href="https://www.facebook.com/CoderDojoSAGA/" target="_blank" rel="noopener">
-        <h2>活動を知りたい</h2>
-        <p>CoderDojo ってどんなとこ？<br>どんなことができるの？</p>
-      </a>
-      <a class="card card-orange" href="https://coderdojo-saga.peatix.com/" target="_blank" rel="noopener">
-        <h2>活動に参加したい</h2>
-        <p>ニンジャとして参加してみよう！</p>
-      </a>
-      <a class="card card-purple" href="#sponsor">
-        <h2>活動に協力したい</h2>
-        <p>メンターや寄付・協賛などで<br>活動への協力や応援をお願いいたします</p>
-      </a>
-    </div>
-  </section>
-
-  <section class="section schedule" id="schedule">
-    <h2 class="section-title">今後の開催予定</h2>
-    <div class="event">
-      <h3>第66回 CoderDojo さが</h3>
-      <dl>
-        <dt>日時</dt><dd>2026年09月20日(日) 10:00～12:00（受付 9:45～）</dd>
-        <dt>会場</dt><dd>佐賀市市民活動プラザ 4F 401・402会議室<br>（佐賀市白山2丁目1-12 佐賀商工ビル 4階）</dd>
-        <dt>共催</dt><dd>佐賀県産業スマート化センター</dd>
-      </dl>
-      <p class="closed">今回の参加申込は終了しました</p>
-      <a class="btn" href="https://coderdojosaga66.peatix.com/" target="_blank" rel="noopener">イベント詳細（Peatix）</a>
-    </div>
-    <p class="note">※次回の開催日が決まり次第、Facebook・Peatixでご案内します。</p>
-  </section>
-
-  <section class="section report" id="report">
-    <h2 class="section-title">開催レポート</h2>
-    <p class="lead">活動の様子は Facebook ページでご覧いただけます。</p>
-    <p class="more"><a class="btn" href="https://www.facebook.com/CoderDojoSAGA/" target="_blank" rel="noopener">Facebookで活動を見る</a></p>
-  </section>
-
-  <section class="section news" id="news">
-    <h2 class="section-title">お知らせ</h2>
-    <ul class="post-list">
+    <ul class="cards">
       <li>
-        <a href="https://coderdojosaga66.peatix.com/" target="_blank" rel="noopener">
-          <h3>第66回 CoderDojo さが（2026年9月20日開催）のご案内</h3>
-          <span class="date">佐賀県産業スマート化センター 共催</span>
+        <a class="card card-blue" href="https://www.facebook.com/CoderDojoSAGA/" target="_blank" rel="noopener">
+          <h2>活動を知りたい</h2>
+          <p>CoderDojo ってどんなとこ？<br>どんなことができるの？</p>
+        </a>
+      </li>
+      <li>
+        <a class="card card-orange" href="https://coderdojo-saga.peatix.com/" target="_blank" rel="noopener">
+          <h2>活動に参加したい</h2>
+          <p>ニンジャとして参加してみよう！</p>
+        </a>
+      </li>
+      <li>
+        <a class="card card-purple" href="#sponsor">
+          <h2>活動に協力したい</h2>
+          <p>メンターや寄付・協賛などで<br>活動への協力や応援をお願いいたします</p>
         </a>
       </li>
     </ul>
-    <p class="more"><a href="https://coderdojo-saga.peatix.com/" target="_blank" rel="noopener">開催案内の一覧を見る（Peatix）</a></p>
   </section>
 
-  <section class="section sponsor" id="sponsor">
-    <p>CoderDojo さが は非営利のボランティア団体です。<br>
-      助成金や企業・個人の皆さまからの寄付金で運営されています。</p>
-    <p>第66回は、佐賀市市民活動応援制度「チカラット」補助対象事業です。</p>
-    <p>メンター・寄付・協賛のご相談は <a href="mailto:saga.jp@coderdojo.com">saga.jp@coderdojo.com</a> まで。</p>
+  <section class="schedule" id="schedule">
+    <div class="container panels">
+      <div class="panel">
+        <h2>今後の開催予定</h2>
+        <div class="panel-body">
+          <p><span class="pin">&#9679;</span>2026年09月20日(日) 10:00～12:00</p>
+          <p>第66回 CoderDojo さが</p>
+          <p>@佐賀市市民活動プラザ 4F 401・402会議室（佐賀県佐賀市）</p>
+          <p>共催：佐賀県産業スマート化センター</p>
+          <p class="closed">今回の参加申込は終了しました</p>
+          <div class="btn-wrap"><a class="btn" href="https://coderdojosaga66.peatix.com/" target="_blank" rel="noopener">詳細・参加申込</a></div>
+        </div>
+      </div>
+      <div class="panel">
+        <h2>活動のご案内</h2>
+        <div class="panel-body">
+          <ul>
+            <li>開催：佐賀市内で月1回</li>
+            <li>対象：4歳児～高校生</li>
+            <li>持ち物：飲みもの、パソコンやタブレット、学習中の教材など</li>
+            <li>機材の貸し出し：PC・タブレット・Micro:bit・Toioなど（数に限りがあります）</li>
+          </ul>
+          <div class="btn-wrap"><a class="btn" href="https://coderdojo-saga.peatix.com/" target="_blank" rel="noopener">開催案内の一覧</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section report" id="report">
+    <div class="container">
+      <h2 class="section-title">開催レポート</h2>
+      <p class="lead">活動の様子は Facebook ページでご覧いただけます。</p>
+      <p class="more" style="margin-top:0"><a class="btn" href="https://www.facebook.com/CoderDojoSAGA/" target="_blank" rel="noopener">Facebookで活動を見る</a></p>
+    </div>
+  </section>
+
+  <section class="section news" id="news">
+    <div class="container">
+      <h2 class="section-title">お知らせ</h2>
+      <ul class="post-grid">
+        <li>
+          <a href="https://coderdojosaga66.peatix.com/" target="_blank" rel="noopener">
+            <div class="post-thumb">第66回</div>
+            <h3>第66回 CoderDojo さが（2026年9月20日開催）のご案内</h3>
+            <dl class="post-meta">
+              <dt>開催日時</dt><dd>2026年09月20日(日) 10:00～12:00</dd>
+              <dt>会場</dt><dd>佐賀市市民活動プラザ（佐賀県佐賀市）</dd>
+            </dl>
+            <div class="post-foot">佐賀県産業スマート化センター 共催</div>
+          </a>
+        </li>
+      </ul>
+      <p class="more"><a href="https://coderdojo-saga.peatix.com/" target="_blank" rel="noopener">開催案内の一覧を見る（Peatix）</a></p>
+    </div>
+  </section>
+
+  <section class="sponsor" id="sponsor">
+    <div class="container">
+      <p>CoderDojo さが は非営利のボランティア団体です。<br>
+        助成金や企業・個人の皆さまからの寄付金で運営されています。</p>
+      <p>第66回は、佐賀市市民活動応援制度「チカラット」補助対象事業です。</p>
+      <p>メンター・寄付・協賛のご相談は <a href="mailto:saga.jp@coderdojo.com">saga.jp@coderdojo.com</a> まで。</p>
+    </div>
   </section>
 
 </main>
 
 <footer class="site-footer">
-  <p>
-    <a href="https://www.facebook.com/CoderDojoSAGA/" target="_blank" rel="noopener">Facebook</a> ・
-    <a href="https://coderdojo-saga.peatix.com/" target="_blank" rel="noopener">Peatix</a> ・
-    <a href="mailto:saga.jp@coderdojo.com">saga.jp@coderdojo.com</a>
-  </p>
-  <p>&copy; CoderDojo さが</p>
+  <p>佐賀市内で毎月1回開催する子どもたちのためのプログラミングクラブ</p>
+  <ul class="footer-links">
+    <li><a href="#about">CoderDojoについて</a></li>
+    <li><a href="#schedule">開催予定</a></li>
+    <li><a href="#report">開催レポート</a></li>
+    <li><a href="#sponsor">協力・支援</a></li>
+    <li><a href="https://www.facebook.com/CoderDojoSAGA/" target="_blank" rel="noopener">Facebook</a></li>
+    <li><a href="https://coderdojo-saga.peatix.com/" target="_blank" rel="noopener">Peatix</a></li>
+    <li><a href="mailto:saga.jp@coderdojo.com">お問い合わせ</a></li>
+  </ul>
+  <p class="copy">&copy; CoderDojo Saga.</p>
 </footer>
 
 <script>
