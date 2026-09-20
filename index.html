@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoderDojo さが - 小・中学生のためのプログラミングクラブ</title>
+  <meta name="description" content="佐賀の子どもたちのためのプログラミングクラブ CoderDojo さが">
+  <meta property="og:title" content="CoderDojo さが">
+  <meta property="og:description" content="小・中学生のためのプログラミングクラブ">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="logo" href="#top">
+    <span class="logo-mark" aria-hidden="true">{ }</span>
+    <span class="logo-text">CoderDojo <b>さが</b></span>
+  </a>
+  <button class="menu-btn" aria-label="メニュー" aria-expanded="false" aria-controls="nav">
+    <span></span><span></span><span></span>
+  </button>
+  <nav id="nav" class="nav">
+    <a href="#about">CoderDojoとは</a>
+    <a href="#schedule">開催予定</a>
+    <a href="#report">開催レポート</a>
+    <a href="#news">お知らせ</a>
+    <a href="#sponsor">協力・協賛</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section class="main-visual">
+    <div class="mv-inner">
+      <p class="mv-badge">佐賀県</p>
+      <p class="mv-sub">子どものためのプログラミングクラブ</p>
+      <h1 class="mv-title">CoderDojo <span>さが</span></h1>
+    </div>
+  </section>
+
+  <section class="intro">
+    <p>
+      CoderDojoは、アイルランドの一人の高校生が始めた、<br>
+      地域の子ども達にボランティアでプログラミングを指南する活動です。<br>
+      CoderDojoさがは佐賀県内の子どもたちを対象に活動しています。
+    </p>
+  </section>
+
+  <section class="about-activities" id="about">
+    <div class="cards">
+      <a class="card card-blue" href="#">
+        <h2>活動を知りたい</h2>
+        <p>CoderDojo ってどんなとこ？<br>どんなことができるの？</p>
+      </a>
+      <a class="card card-orange" href="#">
+        <h2>活動に参加したい</h2>
+        <p>ニンジャとして参加してみよう！</p>
+      </a>
+      <a class="card card-purple" href="#sponsor">
+        <h2>活動に協力したい</h2>
+        <p>メンターや寄付・協賛などで<br>活動への協力や応援をお願いいたします</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="section schedule" id="schedule">
+    <h2 class="section-title">今後の開催予定</h2>
+    <div class="event">
+      <h3>第◯回 CoderDojo さが</h3>
+      <dl>
+        <dt>日時</dt><dd>20XX年XX月XX日(X) XX:XX～XX:XX</dd>
+        <dt>会場</dt><dd>会場名（佐賀県◯◯市）</dd>
+      </dl>
+      <a class="btn" href="#">詳細・参加申込</a>
+    </div>
+    <p class="note">※開催日・会場が決まり次第、こちらに掲載します。</p>
+  </section>
+
+  <section class="section report" id="report">
+    <h2 class="section-title">開催レポート</h2>
+    <ul class="post-list">
+      <li>
+        <a href="#">
+          <h3>第◯回CoderDojo さが (20XX年XX月XX日）を開催しました</h3>
+          <dl>
+            <dt>開催日時</dt><dd>20XX年XX月XX日(X) XX:XX～XX:XX</dd>
+            <dt>会場</dt><dd>会場名（佐賀県◯◯市）</dd>
+            <dt>参加者数</dt><dd>Ninja X名 Mentor X名</dd>
+          </dl>
+          <span class="date">公開日 20XX.XX.XX</span>
+        </a>
+      </li>
+    </ul>
+    <p class="more"><a href="#">過去の記事を見る</a></p>
+  </section>
+
+  <section class="section news" id="news">
+    <h2 class="section-title">お知らせ・メンターブログ</h2>
+    <ul class="post-list">
+      <li>
+        <a href="#">
+          <h3>お知らせのタイトルがここに入ります</h3>
+          <span class="date">公開日 20XX.XX.XX</span>
+        </a>
+      </li>
+    </ul>
+    <p class="more"><a href="#">過去の記事を見る</a></p>
+  </section>
+
+  <section class="section sponsor" id="sponsor">
+    <p>CoderDojo さが の取り組みは、外部企業・団体・個人の支援により行われています</p>
+    <div class="sponsor-logos">
+      <span>協賛企業・団体のロゴ</span>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>&copy; CoderDojo さが</p>
+</footer>
+
+<script>
+  const btn = document.querySelector('.menu-btn');
+  const nav = document.getElementById('nav');
+  btn.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open);
+  });
+  nav.addEventListener('click', e => {
+    if (e.target.tagName === 'A') {
+      nav.classList.remove('open');
+      btn.setAttribute('aria-expanded', false);
+    }
+  });
+</script>
+</body>
+</html>
