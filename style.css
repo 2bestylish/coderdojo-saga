@@ -43,7 +43,7 @@ img, svg { max-width: 100%; }
   backdrop-filter: blur(3px);
 }
 .logo { display: flex; align-items: center; gap: 8px; text-decoration: none; font-weight: 700; font-size: 22px; line-height: 1; }
-.logo img { width: 38px; height: auto; flex: none; mix-blend-mode: multiply; }
+.logo img { width: 38px; height: auto; flex: none; }
 .logo b { font-size: 1.1em; }
 
 .menu-btn {
@@ -70,7 +70,7 @@ img, svg { max-width: 100%; }
   display: grid; place-items: center;
   padding: 32px 16px 40px;
   background:
-    linear-gradient(rgba(255,255,255,.62), rgba(255,255,255,.62)),
+    linear-gradient(rgba(255,255,255,.74), rgba(255,255,255,.74)),
     url("assets/photo-group.webp") center 35% / cover no-repeat;
   position: relative; overflow: hidden;
 }
@@ -162,7 +162,7 @@ img, svg { max-width: 100%; }
   background: var(--binary), linear-gradient(135deg, #86d1a0, #9fd3e6);
   background-size: 72px 40px, auto;
 }
-.post-thumb img { height: 70%; width: auto; mix-blend-mode: multiply; }
+.post-thumb img { height: 78%; width: auto; }
 .chikarat { height: auto; }
 .post-grid h3 { margin: 12px 0 8px; font-size: 18px; font-weight: 400; line-height: 1.5; }
 .post-meta { margin: 0; padding: 0; display: grid; grid-template-columns: auto 1fr; gap: 4px 8px; font-size: 13px; }
