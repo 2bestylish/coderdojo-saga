@@ -134,12 +134,13 @@ img, svg { max-width: 100%; }
     repeating-linear-gradient(90deg, rgba(0,0,0,.025) 0 2px, transparent 2px 7px),
     linear-gradient(#ddd9d2, #c9c4bb);
   padding-bottom: 20px; min-height: 230px;
+  display: flex; flex-direction: column;
 }
 .panel h2 {
   margin: 0 0 12px; padding: 7px 0; text-align: center; font-size: 24px; font-weight: 400;
   background: var(--brown); color: #fff;
 }
-.panel-body { background: #fff; margin: 0 6px; padding: 12px 16px 16px; font-size: 15px; }
+.panel-body { flex: 1; background: #fff; margin: 0 6px; padding: 12px 16px 16px; font-size: 15px; }
 .panel-body p { margin: 0 0 4px; }
 .panel-body .pin { color: #f0a020; margin-right: 6px; }
 .panel-body .closed { color: #c0392b; font-weight: 700; margin: 6px 0; }
