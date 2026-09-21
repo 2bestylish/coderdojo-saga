@@ -200,8 +200,9 @@ img, svg { max-width: 100%; }
   .post-grid { grid-template-columns: repeat(3, 1fr); }
 }
 
-/* Report thumbnails: white background with a blue outline */
-.report .post-thumb {
+/* Report/news thumbnails: white background with a blue outline */
+.report .post-thumb,
+.news .post-thumb {
   background: #fff;
   border: 3px solid var(--blue);
   border-radius: 6px;
