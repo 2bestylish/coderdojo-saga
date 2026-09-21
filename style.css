@@ -199,3 +199,10 @@ img, svg { max-width: 100%; }
   .panels { grid-template-columns: 1fr 1fr; gap: 14px; }
   .post-grid { grid-template-columns: repeat(3, 1fr); }
 }
+
+/* Report thumbnails: white background with a blue outline */
+.report .post-thumb {
+  background: #fff;
+  border: 3px solid var(--blue);
+  border-radius: 6px;
+}
