@@ -169,6 +169,7 @@ img, svg { max-width: 100%; }
 .post-meta { margin: 0; padding: 0; display: grid; grid-template-columns: auto 1fr; gap: 4px 8px; font-size: 13px; }
 .post-meta dt { background: #fbe7a0; padding: 0 8px; border-radius: 4px; white-space: nowrap; text-align: center; }
 .post-meta dd { margin: 0; }
+.post-text { margin: 0; font-size: 14px; }
 .post-foot { margin-top: 8px; padding: 2px 8px; background: #ddd; text-align: right; font-size: 12px; }
 .more { text-align: center; margin: 28px 0 0; }
 .lead { text-align: center; margin: 0 0 16px; }
@@ -241,6 +242,8 @@ img, svg { max-width: 100%; }
 .page .schedule-list { list-style: none; padding-left: 0; }
 .page .schedule-list li { padding: 4px 12px; border-left: 4px solid #c2e8cf; margin-bottom: 6px; }
 .page .btn-row { text-align: center; }
+.page ol.steps { margin: 12px 16px 0; padding-left: 1.6em; }
+.page ol.steps li { margin-bottom: 8px; }
 @media (min-width: 768px) {
   .page { margin-top: 71px; }
   .page .tools { columns: 2; }
